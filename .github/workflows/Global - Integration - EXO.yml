@@ -38,8 +38,8 @@ jobs:
       - name: Commit {Create} Integration Tests
         shell: powershell
         run: |
-          git config --local user.email "nicharl@microsoft.com"
-          git config --local user.name "NikCharlebois"
+          git config --local user.name "${{ env.GIT_USER_NAME }}"
+          git config --local user.email "${{ env.GIT_USER_EMAIL }}"
           git add D:/a/Microsoft365DSC/Microsoft365DSC/Tests/Integration/*
           git pull
           git commit -m "Updated {Create} EXO Integration Tests"
@@ -96,8 +96,8 @@ jobs:
       - name: Commit {Update} Integration Tests
         shell: powershell
         run: |
-          git config --local user.email "nicharl@microsoft.com"
-          git config --local user.name "NikCharlebois"
+          git config --local user.name "${{ env.GIT_USER_NAME }}"
+          git config --local user.email "${{ env.GIT_USER_EMAIL }}"
           git add D:/a/Microsoft365DSC/Microsoft365DSC/Tests/Integration/*
           git pull
           git commit -m "Updated {Update} EXO Integration Tests"
@@ -154,8 +154,8 @@ jobs:
       - name: Commit {Remove} Integration Tests
         shell: powershell
         run: |
-            git config --local user.email "nicharl@microsoft.com"
-            git config --local user.name "NikCharlebois"
+            git config --local user.name "${{ env.GIT_USER_NAME }}"
+            git config --local user.email "${{ env.GIT_USER_EMAIL }}"
             git add D:/a/Microsoft365DSC/Microsoft365DSC/Tests/Integration/*
             git pull
             git commit -m "Updated {Update} EXO Integration Tests"
