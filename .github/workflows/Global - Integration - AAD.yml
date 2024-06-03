@@ -38,8 +38,8 @@ jobs:
       - name: Commit {Create} Integration Tests
         shell: powershell
         run: |
-          git config --local user.email "nicharl@microsoft.com"
-          git config --local user.name "NikCharlebois"
+          git config --local user.email "j.gedicke@ddit.dev"
+          git config --local user.name "Johannes Gedicke"
           git add D:/a/Microsoft365DSC/Microsoft365DSC/Tests/Integration/*
           git pull
           git commit -m "Updated {Create} AAD Integration Tests"
@@ -110,8 +110,8 @@ jobs:
       - name: Commit {Update} Integration Tests
         shell: powershell
         run: |
-          git config --local user.email "nicharl@microsoft.com"
-          git config --local user.name "NikCharlebois"
+          git config --local user.email "j.gedicke@ddit.dev"
+          git config --local user.name "Johannes Gedicke"
           git add D:/a/Microsoft365DSC/Microsoft365DSC/Tests/Integration/*
           git pull
           git commit -m "Updated {Update} AAD Integration Tests"
