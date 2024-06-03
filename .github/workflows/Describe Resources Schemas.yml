@@ -37,8 +37,8 @@ jobs:
       - name: Commit File
         shell: powershell
         run: |
-          git config --local user.email "nicharl@microsoft.com"
-          git config --local user.name "NikCharlebois"
+          git config --local user.name "${{ env.GIT_USER_NAME }}"
+          git config --local user.email "${{ env.GIT_USER_EMAIL }}"
           git add D:/a/Microsoft365DSC/Microsoft365DSC/Modules/Microsoft365DSC/SchemaDefinition.json
           git pull
           git commit -m "Updated Schema Definition"
